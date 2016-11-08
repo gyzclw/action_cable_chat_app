@@ -1,11 +1,12 @@
-<div>
+<div id="chatroom-title">
 <h1>Chatroom</h1>
 
-<div>
+<div class="message-index " id= "chatrooms">
   <%= render partial: 'chatroom_form', locals: {chatroom: @chatroom} %>
 </div>
+<div id="chatroom-error"></div>
 
-<ul>
+<ul id="chatroom-index">
    <% if @chatrooms.any? %>
      <%= render @chatrooms %>
    <% else %>
