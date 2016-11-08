@@ -1,0 +1,8 @@
+<div>
+  <%= form_for chatroom, remote: true do |f| %>
+    <div>
+      <%= f.text_field :topic %>
+    </div>
+    <%= f.submit class: 'btn btn_primary' %>
+  <% end %>
+</div>
